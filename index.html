@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Create Account Page -->
+  <div id="create-account-page" class="container">
+    <h2>Create Account</h2>
+    <form id="create-account-form">
+      <!-- Username -->
+      <div class="input-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      
+      <!-- Password -->
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </div>
+
+      <!-- Age -->
+      <div class="input-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" required min="18">
+      </div>
+
+      <!-- Family History of Neurological Disease -->
+      <div class="input-group">
+        <label for="family-history">Do you have a family history of neurological disease?</label>
+        <select id="family-history" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="unknown">Unknown</option>
+        </select>
+      </div>
+
+      <button type="submit" id="create-account-btn">Create Account</button>
+    </form>
+    <p id="error-message" class="error-message"></p>
+  </div>
+
+  <!-- Link to External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
