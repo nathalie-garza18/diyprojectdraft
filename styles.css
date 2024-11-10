@@ -1,0 +1,84 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light grey background */
+  color: #333;
+}
+
+/* Container for the account creation screen */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+h2 {
+  text-align: center;
+  color: #3498db; /* Blue */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus, select:focus {
+  border-color: #3498db; /* Blue border on focus */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #e91e63; /* Pink button */
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
